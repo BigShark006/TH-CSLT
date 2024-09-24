@@ -1,0 +1,88 @@
+#include <stdio.h>
+int main()
+{
+	printf("Nhap so nguyen n: ");
+	int n;
+	scanf_s("%d", &n);
+	
+	if (9 < n < 100) {
+		int chuc, dv;
+		chuc = n / 10;
+		dv = n % 10;
+
+		switch (chuc)
+		{
+		case 1:
+			printf("Muoi");
+			break;
+		case 2:
+			printf("Hai muoi");
+			break;
+		case 3:
+			printf("Ba muoi");
+			break;
+		case 4:
+			printf("Bon muoi ");
+			break;
+		case 5:
+			printf("Nam muoi");
+			break;
+		case 6:
+			printf("Sau muoi");
+			break;
+		case 7:
+			printf("Bay muoi");
+			break;
+		case 8:
+			printf("Tam muoi");
+			break;
+		case 9:
+			printf("Chin muoi");
+			break;
+		default:
+			printf("Chi tu 1 den 9 thoi\n");
+		}
+
+		switch (dv)
+		{
+		case 0:
+			printf(" ");
+			break;
+		case 1:
+			printf("Mot");
+			break;
+		case 2:
+			printf("Hai");
+			break;
+		case 3:
+			printf("Ba");
+			break;
+		case 4:
+			printf("Bon");
+			break;
+		case 5:
+			printf("Nam");
+			break;
+		case 6:
+			printf("Sau");
+			break;
+		case 7:
+			printf("Bay");
+			break;
+		case 8:
+			printf("Tam");
+			break;
+		case 9:
+			printf("Chin");
+			break;
+		default:
+			printf("Chi tu 0 den 9 thoi\n");
+			break;
+		}
+	}
+	else {
+		printf("So ban nhap vao khong phai hai chu so\n");
+	}
+
+	return 0;
+}
