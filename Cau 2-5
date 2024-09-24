@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main()
+{
+	unsigned int a, b, c;
+	printf("Nhap a b c: ");
+	scanf_s("%u%u%u", &a, &b, &c);
+
+	if ((a + b > c) && (a + c > b) && (b + c > a)) {
+		printf("Day la hinh tam giac\n");
+	} 
+	else {
+		printf("Day khong phai hinh tam giac dau\n");
+	}
+	return 0;
+
+	if ((a = b) || (b = c) || (c = a)) {
+		printf("Day la tam giac vuong can\n");
+	}
+	else if (a == b && b == c) {
+		printf("Day la tam giac deu\n");
+	}
+	else if ((a * a = b * b + c * c) && (b * b = a * a + c * c) && (c * c = b * b + a * a))
+		printf("Day la tam giac vuong");
+	
+	return 0;
+
+}
