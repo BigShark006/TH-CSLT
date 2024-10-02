@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+	
+	int n;
+	do {
+		printf("Nhap N: ");
+		scanf_s("%d", &n);
+		if (n <= 0)
+			printf("Nhap sai, nhap lai\n");
+	} while (n <= 0);
+	printf("So ban da nhap la: %d", n);
+
+	return 0;
+}
